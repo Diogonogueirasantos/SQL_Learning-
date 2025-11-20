@@ -1,0 +1,31 @@
+USE SQL_Fundamentals;
+
+/*
+  Uma peculiaridade do MySql/MariaDB e que ambos possibilitam a busca de um valor boleano com true ou false (normalmente em outros RDBMS é apenas permitido 0 para false e 1 para true)
+*/
+
+SELECT station_number, report_code, CONCAT(day, "/", month, "/", year) as FULL_DATE FROM STATION_DATA WHERE year=2000;
+
+
+SELECT station_number, report_code, precipitation, tornado, hail, CONCAT(day, "/", month, "/", year) AS FULL_DATE FROM STATION_DATA WHERE report_code like'2%AC4' and year<=2000;
+
+SELECT station_number, report_code, precipitation, station_pressure, visibility, wind_speed, temperature, CONCAT(day, "/", month, "/", year) AS FULL_DATE FROM STATION_DATA
+WHERE report_code like"A%5" and year BETWEEN 2000 AND 2010;	
+
+SELECT station_number, report_code, precipitation, station_pressure, visibility, wind_speed, temperature, CONCAT(day, "/", month, "/", year) AS FULL_DATE FROM STATION_DATA
+WHERE year in(2000, 2010)
+ORDER BY year;
+
+
+
+/*
+  Quando se torna necessário verificar a ausencia ou não ausência de valores usamos as funções IS NULL ou IS NOT NULL junto com a claúsula WHERE
+*/
+
+SELECT station_number, report_code, precipitation, station_pressure, visibility, wind_speed, temperature, CONCAT(day, "/", month, "/", year) AS FULL_DATE FROM STATION_DATA
+WHERE station_pressure IS NOT NULL
+ORDER BY year;
+
+
+SELECT station_number, report_code, precipitation, station_pressure, CONCAT(day, "/", month, "/", year) as FULL_DATE FROM STATION_DATA
+WHERE precipitation IS NULL OR precipitation <= 0.4;
