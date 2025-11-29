@@ -1,0 +1,12 @@
+USE SQL_Fundamentals;
+
+SELECT S.station_number, CONCAT(day, "|", month, "|", year) AS FULL_DATE, (SELECT ROUND(AVG(temperature), 2)  FROM STATION_DATA) AS "AVG TEMPERATURE" 
+FROM STATION_DATA AS S LIMIT 20;
+
+
+SELECT S.station_number, S.report_code, (SELECT ROUND(AVG(temperature), 2)) AS "AVG TEMPERATURE", CONCAT(day, "-", month, "-", year) AS FULL_DATE
+FROM STATION_DATA AS S
+WHERE year IN(1998, 2010) AND  report_code LIKE "%5"
+LIMIT 30; 
+
+# Acredito que quando não utilizamos a cláusula WHERE a consulta retornará multiplos registros. Para limitar os números de registros utilizei a cláusula LIMIT
