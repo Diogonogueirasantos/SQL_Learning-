@@ -1,0 +1,33 @@
+USE SQL_Fundamentals;
+
+SELECT station_number, report_code, precipitation, CONCAT(day, "/", month, "/", year) AS FULL_DATE, COUNT(*) AS RECORDS_FILTERS FROM STATION_DATA 
+WHERE year in(2000, 2010) AND tornado=true AND report_code like "A%_25";  
+
+# Quando os dados impostos na cláusula where não existem no conjunto de dados, todos os campos selecionados retornam null
+
+SELECT station_number, report_code, precipitation, temperature,
+CONCAT(day, "/", month, "/", year) AS FULL_DATE, COUNT(*) AS RECORDS_FILTERS 
+FROM STATION_DATA WHERE year IN(1990, 2010) AND tornado=false
+GROUP BY year;
+
+
+SELECT visibility, precipitation, temperature, COUNT(*) AS RECORDS_COUNT , CONCAT(day, "-", month, "-", year) AS FULL_DATE FROM STATION_DATA
+WHERE year IN(2000, 2010) AND tornado=true
+GROUP BY month, year;
+
+# Utilizando o posicionamento ordinal das colunas em conjunto ao GROUP BY
+
+SELECT month, year FROM STATION_DATA 
+WHERE year IN(2000, 2010) AND tornado=true
+GROUP BY 1, 2;
+
+/*
+Nota!
+	Nem todo RDBMS possuí suporte ao posicionamento ordinal em conjunto a cláusula where 
+*/
+
+
+SELECT month, year, ROUND(AVG(temperature), 2) AS AVG_TEMPERATURE FROM STATION_DATA 
+WHERE year in(1990, 2009)
+GROUP BY year, month
+ORDER BY month, year;
