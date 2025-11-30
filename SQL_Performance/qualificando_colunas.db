@@ -8,12 +8,6 @@ SELECT CURRENT_DATE;
 SELECT CUSTOMER.NAME, REGION, CONCAT(STREET_ADDRESS, "|", CITY, "|", STATE, "|", ZIP) AS FULL_ADDRESS FROM CUSTOMER;
 
 
-/*
- como foi verificado não é possível utilizar a qualificação de colunas em aliases "O que faz sentido. Porém melhor sanar a curiosidade em estudos do que em código de produção"
-*/
-
-
-
 # Alias Direto
 
 SELECT C.NAME, C.REGION, CONCAT(STREET_ADDRESS, "|", CITY, "|", STATE, "|", ZIP) AS FULL_ADDRESS FROM CUSTOMERS AS C;

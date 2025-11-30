@@ -9,4 +9,7 @@ FROM STATION_DATA AS S
 WHERE year IN(1998, 2010) AND  report_code LIKE "%5"
 LIMIT 30; 
 
+SELECT station_number, report_code, temperature FROM STATION_DATA WHERE temperature <= (SELECT RUOND(AVG(temperature), 2) WHERE tornado=true AND visibility <= 6.0) LIMIT 30;
+
+
 # Acredito que quando não utilizamos a cláusula WHERE a consulta retornará multiplos registros. Para limitar os números de registros utilizei a cláusula LIMIT
