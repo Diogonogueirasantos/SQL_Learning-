@@ -1,0 +1,23 @@
+USE SQL_Fundamentals;
+
+# Não é possível utilizar colunas temporarias como parâmetro de filtragem.
+
+
+SELECT station_number, report_code, CONCAT(fog, "|",  rain, "|", hail, "|", thunder, "|", tornado) AS EXTRA_WHETHER_CONDITIONS FROM STATION_DATA;
+
+
+
+SELECT station_number, report_code, CONCAT(fog, "|", rain, "|", hail, "|", thunder, "|", tornado) AS EXTRA_WHETHER_CONDITIONS, COUNT(*) AS EVENTS 
+FROM STATION_DATA 
+GROUP BY station_number HAVING EXTRA_WHETHER_CONDITIONS = 1
+LIMIT 30;
+
+
+# Testando variação HAVING
+
+SELECT station_number, report_code, CONCAT(fog, "|", rain, "|", hail, "|", thunder, "|", tornado) AS EXTRA_WHETHER_CONDITIONS, COUNT(*) AS EVENTS
+FROM  STATION_DATA
+GROUP BY station_number
+HAVING EXTRA_WHETHER_CONDITIONS = (SELECT CONCAT(day, "-", month, "-", year) AS FULL_DATE FROM STATION_DATA GROUP BY station_number HAVING FULL_DATE IN(2000, 2010));
+
+# A consulta acima não retornou nem um registro, porém tivemos um total de 6368 warnings. Com isso concluo que algo de errado não esta certo.
