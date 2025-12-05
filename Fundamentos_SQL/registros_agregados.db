@@ -21,3 +21,10 @@ GROUP BY station_number
 HAVING EXTRA_WHETHER_CONDITIONS = (SELECT CONCAT(day, "-", month, "-", year) AS FULL_DATE FROM STATION_DATA GROUP BY station_number HAVING FULL_DATE IN(2000, 2010));
 
 # A consulta acima não retornou nem um registro, porém tivemos um total de 6368 warnings. Com isso concluo que algo de errado não esta certo.
+
+
+
+/*
+ A função CONCAT transforma todo o tipo de dado agregado em tipo caracter, isso permite que se possa utilizar parâmetros de buscas,
+como o like em colunas temporarias criadas com o CONCAT.
+*/

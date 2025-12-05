@@ -1,0 +1,7 @@
+SELECT S.station_number, S.report_code, CONCAT(day, "-", month, "-", year) AS FULL_DATE,
+CASE
+   WHEN precipitation = NULL THEN "Não avalidado"
+END AS classificacao_avaliativa 
+FROM STATION_DATA AS S
+WHERE dew_point <= (SELECT AVG(dew_point) AS avg_dew_point FROM STATION_DATA)
+LIMIT 30;
