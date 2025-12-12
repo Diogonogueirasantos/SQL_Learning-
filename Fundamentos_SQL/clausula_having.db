@@ -1,0 +1,6 @@
+USE SQL_Fundamentals;
+
+SELECT S.station_number, S.report_code, CONCAT(year, "-", month, "-", day) AS FULL_DATE, 
+CONCAT(fog, rain, hail, thunder) AS SPECIAL_WHETER_CONDITIONS FROM STATION_DATA AS S
+HAVING SPECIAL_WHETER_CONDITIONS = 1
+GROUP BY S.station_number, S.report_code;

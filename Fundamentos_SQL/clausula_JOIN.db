@@ -1,0 +1,24 @@
+USE SQL_Fundamentals;
+
+
+
+SELECT C.NAME, C.REGION, O.PRODUCT_ID, O.ORDER_DATE, O.SHIP_DATE FROM CUSTOMER AS C
+INNER JOIN CUSTOMER_ORDER AS O ON C.CUSTOMER_ID = O.CUSTOMER_ID;
+
+#Como já visto acima, também é possível utilizar qualificação das culunas quando utilizamos o join
+
+
+/*Um ponto importante em relação ao comportamento da cláusula inner join é que ela apenas retornará
+os registros quando o campo de comparação existir na duas. Logo se na instrução acima tivessemos usado a cláusula JOIN ela retornaria até
+mesmo os casos que ainda não possuem uma relação entre as duas tabela.*/
+
+SELECT C.NAME, C.REGION, O.PRODUCT_ID, O.ORDER_DATE, O.SHIP_DATE FROM CUSTOMER AS C
+JOIN CUSTOMER_ORDER AS O ON C.CUSTOMER_ID = O.CUSTOMER_ID;
+
+
+
+
+
+
+
+
