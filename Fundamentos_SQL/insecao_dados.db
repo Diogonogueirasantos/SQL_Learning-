@@ -1,0 +1,67 @@
+# Esta sessão tem como principio reforçar os conceitos e aplicações da inserção de dados.
+
+CREATE DATABASE INSERTS;
+
+USE INSERTS;
+
+CREATE TABLE USERS(
+	ID_USER TINYINT AUTO_INCREMENT,
+	FIRST_NAME VARCHAR(10) NOT NULL,
+	LAST_NAME VARCHAR(20) NOT NULL,
+	GENDER ENUM("Male", "Female", "Others"),
+	BIRTH DATE,
+	NACIONALITY VARCHAR(30) DEFAULT "Brasileiro(a)",
+	PRIMARY KEY(ID_USER)
+	
+)DEFAULT CHARSET="UTF8";
+
+
+CREATE TABLE USERS_II(
+        ID_USER TINYINT AUTO_INCREMENT,
+        FIRST_NAME VARCHAR(10) NOT NULL,
+        LAST_NAME VARCHAR(20) NOT NULL,
+        GENDER ENUM("Male", "Female", "Others"),
+        BIRTH DATE,
+        NACIONALITY VARCHAR(30) DEFAULT "Brasileiro(a)",
+        PRIMARY KEY(ID_USER)
+
+)DEFAULT CHARSET="UTF8";
+
+
+
+# inserindo um único registro.
+
+INSERT INTO USERS (FIRST_NAME, LAST_NAME) VALUES ("Diogo", "Santos");
+
+# Multiplos registros também podem ser incluídos em uma única instrução INSERT.
+
+
+INSERT INTO USERS (FIRST_NAME, LAST_NAME, BIRTH) VALUES ("Julia", "Nakamura", "2003-08-22"), ("Carlos", "Montana", "1993-05-23");
+
+
+# Não é necessário escificar as colunas caso todas sejam preenchidas, porém acredito que especificar as colunas melhora a legibilidade.
+
+INSERT INTO USERS VALUES ("Ana", "Silva");
+
+# Também é possível inserir registros copiando dados de tabelas já existentes utilizando o SELECT
+
+INSERT INTO USERS (FIRST_NAME, LAST_NAME)
+SELECT FIRST_NAME, LAST_NAME FROM USERS_II;
+
+
+# Excluindo registros
+
+DELETE FROM USERS WHERE ID_USER = 6;
+
+
+TRUNCATE TABLE USERS_II;
+
+DROP TABLE USERS_II;
+
+
+# Atualizando tabelas
+
+
+UPDATE USERS SET GENDER = "Male" WHERE ID_USER = 1;
+
+UPDATE USERS SET GENDER = "Female", BIRTH = "2002-09-16" WHERE ID_USER = 4;
