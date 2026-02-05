@@ -1,0 +1,44 @@
+USE SQL_Fundamentals;
+
+CREATE TABLE alunos(
+	id_aluno tinyint not null auto_increment,
+	nome varchar(10),
+	sobrenome varchar(30),
+	data_nascimento date,
+	sexo enum("Masculino", "Feminino"),
+	nascionalidade varchar(30) default "Brasileiro(a)",
+	ensino enum("Fundamental_I", "Fundamental_II", "Ensino_medio"),
+	ano_serie int,
+	periodo enum("Diurno", "Noturno", "Integral"),
+	primary key (id_aluno)
+	
+)default charset="utf8";
+
+
+CREATE TABLE grade_curricular(
+	id_grade tinyint not null auto_increment,
+	id_aluno tinyint,
+	materia varchar(50),
+	carga_horas int,
+	descricao text,
+	primary key (id_grade),
+        foreign key (id_aluno) references alunos(id_aluno)
+
+)default charset="utf8";
+
+
+
+CREATE TABLE notas(
+	id_nota tinyint not null auto_increment,
+	id_aluno tinyint,
+	id_grade tinyint,
+	status enum("Aprovado", "Reprovado", "Recuperacao"),
+	nota_fechamento float(4, 2),
+	primary key(id_nota),
+	foreign key(id_aluno) references alunos(id_aluno),
+	foreign key(id_grade) references grade_curricular(id_grade)
+
+)default charset="utf8";
+
+
+
