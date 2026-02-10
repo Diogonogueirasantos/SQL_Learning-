@@ -22,6 +22,18 @@ LIMIT 30;
 SELECT COUNT(DISTINCT f.id_funcionario, f.nome, f.email) AS registros_nao_duplicados FROM Funcionarios AS f
 LIMIT 40; -- Esta consulta irá retornar o número todas de não duplicatas, logo se ele retornasse 480 registros, então 20 deles seriam duplicatas.
 
+/*
+ Um caso bem interessante está no uso de subconsultas após o from com o uso do DISTINCT e COUNT. Este uso está voltado para outros RDBMS que não 
+ possuem suporte para agrupamento do COUNT mais DISTINCT.
+ */
+
+
+SELECT COUNT(*) AS registros_autenticos FROM
+(SELECT DISTINCT f.id_funcionario, f.nome, f.email FROM Funcionarios AS f) AS registros;
+
+
+
+
 
 -- Mas também teriamos outra maneira mais eficiênte para saber sobre o número total de duplicatas.
 
@@ -37,3 +49,6 @@ LIMIT 25;
 
 SELECT f.id_funcionario, f.nome, f.email, COUNT(*) AS registros_veridicos FROM Funcionarios AS f
 GROUP BY id_funcionario;
+
+
+
