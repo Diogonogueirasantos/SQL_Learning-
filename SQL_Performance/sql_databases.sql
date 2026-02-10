@@ -71,3 +71,15 @@ LINES TERMINATED BY '\n'
 IGNORE 1 LINES
 (id_tour, tour_type, duration_hrs, difficulty, id_waterfall);
 
+
+
+-- Definindo as chaves estrangeiras
+
+
+ALTER TABLE tour ADD FOREIGN KEY (id_waterfall) REFERENCES waterfall(id_waterfall);
+
+ALTER TABLE county ADD FOREIGN KEY (id_waterfall) REFERENCES waterfall(id_waterfall);
+
+ALTER TABLE owner ADD FOREIGN KEY (id_waterfall) REFERENCES waterfall(id_waterfall);
+
+
