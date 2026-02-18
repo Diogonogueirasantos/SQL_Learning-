@@ -1,0 +1,101 @@
+,ID_Cliente,Nome,Email,Cidade
+0,1,Ana Beatriz,ana_beatriz@exemplo.com,Rio de Janeiro
+1,2,Carlos Eduardo,carlos_eduardo@exemplo.com,Recife
+2,3,Fernanda Correia,fernanda_correia@exemplo.com,Rio de Janeiro
+3,4,Luiz Faria,luiz_faria@exemplo.com,Recife
+4,5,Patrícia Nobre,patrícia_nobre@exemplo.com,Curitiba
+5,6,Ricardo Sousa,ricardo_sousa@exemplo.com,Fortaleza
+6,7,Sandra Mara,sandra_mara@exemplo.com,Belo Horizonte
+7,8,Tiago Gomes,tiago_gomes@exemplo.com,Belo Horizonte
+8,9,Veronica Silva,veronica_silva@exemplo.com,Porto Alegre
+9,10,Marcio Nogueira,marcio_nogueira@exemplo.com,Recife
+10,11,Ana Beatriz,ana_beatriz@exemplo.com,Belo Horizonte
+11,12,Carlos Eduardo,carlos_eduardo@exemplo.com,Manaus
+12,13,Fernanda Correia,fernanda_correia@exemplo.com,Brasília
+13,14,Luiz Faria,luiz_faria@exemplo.com,São Paulo
+14,15,Patrícia Nobre,patrícia_nobre@exemplo.com,São Paulo
+15,16,Ricardo Sousa,ricardo_sousa@exemplo.com,Manaus
+16,17,Sandra Mara,sandra_mara@exemplo.com,Fortaleza
+17,18,Tiago Gomes,tiago_gomes@exemplo.com,Manaus
+18,19,Veronica Silva,veronica_silva@exemplo.com,Rio de Janeiro
+19,20,Marcio Nogueira,marcio_nogueira@exemplo.com,São Paulo
+20,21,Ana Beatriz,ana_beatriz@exemplo.com,São Paulo
+21,22,Carlos Eduardo,carlos_eduardo@exemplo.com,Porto Alegre
+22,23,Fernanda Correia,fernanda_correia@exemplo.com,Porto Alegre
+23,24,Luiz Faria,luiz_faria@exemplo.com,Porto Alegre
+24,25,Patrícia Nobre,patrícia_nobre@exemplo.com,Recife
+25,26,Ricardo Sousa,ricardo_sousa@exemplo.com,Fortaleza
+26,27,Sandra Mara,sandra_mara@exemplo.com,Salvador
+27,28,Tiago Gomes,tiago_gomes@exemplo.com,Salvador
+28,29,Veronica Silva,veronica_silva@exemplo.com,São Paulo
+29,30,Marcio Nogueira,marcio_nogueira@exemplo.com,Rio de Janeiro
+30,31,Ana Beatriz,ana_beatriz@exemplo.com,Salvador
+31,32,Carlos Eduardo,carlos_eduardo@exemplo.com,Belo Horizonte
+32,33,Fernanda Correia,fernanda_correia@exemplo.com,Salvador
+33,34,Luiz Faria,luiz_faria@exemplo.com,Brasília
+34,35,Patrícia Nobre,patrícia_nobre@exemplo.com,Rio de Janeiro
+35,36,Ricardo Sousa,ricardo_sousa@exemplo.com,Manaus
+36,37,Sandra Mara,sandra_mara@exemplo.com,Porto Alegre
+37,38,Tiago Gomes,tiago_gomes@exemplo.com,Manaus
+38,39,Veronica Silva,veronica_silva@exemplo.com,São Paulo
+39,40,Marcio Nogueira,marcio_nogueira@exemplo.com,Fortaleza
+40,41,Ana Beatriz,ana_beatriz@exemplo.com,Curitiba
+41,42,Carlos Eduardo,carlos_eduardo@exemplo.com,Salvador
+42,43,Fernanda Correia,fernanda_correia@exemplo.com,Curitiba
+43,44,Luiz Faria,luiz_faria@exemplo.com,Curitiba
+44,45,Patrícia Nobre,patrícia_nobre@exemplo.com,São Paulo
+45,46,Ricardo Sousa,ricardo_sousa@exemplo.com,Salvador
+46,47,Sandra Mara,sandra_mara@exemplo.com,Rio de Janeiro
+47,48,Tiago Gomes,tiago_gomes@exemplo.com,Recife
+48,49,Veronica Silva,veronica_silva@exemplo.com,São Paulo
+49,50,Marcio Nogueira,marcio_nogueira@exemplo.com,Curitiba
+50,51,Ana Beatriz,ana_beatriz@exemplo.com,Salvador
+51,52,Carlos Eduardo,carlos_eduardo@exemplo.com,Salvador
+52,53,Fernanda Correia,fernanda_correia@exemplo.com,Porto Alegre
+53,54,Luiz Faria,luiz_faria@exemplo.com,Belo Horizonte
+54,55,Patrícia Nobre,patrícia_nobre@exemplo.com,Manaus
+55,56,Ricardo Sousa,ricardo_sousa@exemplo.com,Recife
+56,57,Sandra Mara,sandra_mara@exemplo.com,Belo Horizonte
+57,58,Tiago Gomes,tiago_gomes@exemplo.com,Salvador
+58,59,Veronica Silva,veronica_silva@exemplo.com,Curitiba
+59,60,Marcio Nogueira,marcio_nogueira@exemplo.com,Belo Horizonte
+60,61,Ana Beatriz,ana_beatriz@exemplo.com,Brasília
+61,62,Carlos Eduardo,carlos_eduardo@exemplo.com,Fortaleza
+62,63,Fernanda Correia,fernanda_correia@exemplo.com,Manaus
+63,64,Luiz Faria,luiz_faria@exemplo.com,Fortaleza
+64,65,Patrícia Nobre,patrícia_nobre@exemplo.com,São Paulo
+65,66,Ricardo Sousa,ricardo_sousa@exemplo.com,Belo Horizonte
+66,67,Sandra Mara,sandra_mara@exemplo.com,Belo Horizonte
+67,68,Tiago Gomes,tiago_gomes@exemplo.com,Curitiba
+68,69,Veronica Silva,veronica_silva@exemplo.com,Fortaleza
+69,70,Marcio Nogueira,marcio_nogueira@exemplo.com,São Paulo
+70,71,Ana Beatriz,ana_beatriz@exemplo.com,Manaus
+71,72,Carlos Eduardo,carlos_eduardo@exemplo.com,Fortaleza
+72,73,Fernanda Correia,fernanda_correia@exemplo.com,Porto Alegre
+73,74,Luiz Faria,luiz_faria@exemplo.com,Recife
+74,75,Patrícia Nobre,patrícia_nobre@exemplo.com,Fortaleza
+75,76,Ricardo Sousa,ricardo_sousa@exemplo.com,São Paulo
+76,77,Sandra Mara,sandra_mara@exemplo.com,Brasília
+77,78,Tiago Gomes,tiago_gomes@exemplo.com,Fortaleza
+78,79,Veronica Silva,veronica_silva@exemplo.com,Belo Horizonte
+79,80,Marcio Nogueira,marcio_nogueira@exemplo.com,Recife
+80,81,Ana Beatriz,ana_beatriz@exemplo.com,Salvador
+81,82,Carlos Eduardo,carlos_eduardo@exemplo.com,Manaus
+82,83,Fernanda Correia,fernanda_correia@exemplo.com,São Paulo
+83,84,Luiz Faria,luiz_faria@exemplo.com,Rio de Janeiro
+84,85,Patrícia Nobre,patrícia_nobre@exemplo.com,Salvador
+85,86,Ricardo Sousa,ricardo_sousa@exemplo.com,Rio de Janeiro
+86,87,Sandra Mara,sandra_mara@exemplo.com,Recife
+87,88,Tiago Gomes,tiago_gomes@exemplo.com,Curitiba
+88,89,Veronica Silva,veronica_silva@exemplo.com,Belo Horizonte
+89,90,Marcio Nogueira,marcio_nogueira@exemplo.com,Fortaleza
+90,91,Ana Beatriz,ana_beatriz@exemplo.com,Brasília
+91,92,Carlos Eduardo,carlos_eduardo@exemplo.com,Salvador
+92,93,Fernanda Correia,fernanda_correia@exemplo.com,São Paulo
+93,94,Luiz Faria,luiz_faria@exemplo.com,Brasília
+94,95,Patrícia Nobre,patrícia_nobre@exemplo.com,Porto Alegre
+95,96,Ricardo Sousa,ricardo_sousa@exemplo.com,Fortaleza
+96,97,Sandra Mara,sandra_mara@exemplo.com,Fortaleza
+97,98,Tiago Gomes,tiago_gomes@exemplo.com,Belo Horizonte
+98,99,Veronica Silva,veronica_silva@exemplo.com,Recife
+99,100,Marcio Nogueira,marcio_nogueira@exemplo.com,Belo Horizonte
