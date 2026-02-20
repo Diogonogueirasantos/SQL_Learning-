@@ -82,7 +82,6 @@ INSERT INTO Clientes VALUES (DEFAULT, 'Ana Paula', '234.567.890-12', '1985-03-22
 (DEFAULT, 'Priscila Ribeiro', '994.345.678-90', '1983-07-28', 'Rua Bandeira Paulista, 982, São Paulo', '11987680123', 'priscila.ribeiro@email.com', '2023-01-12');
 
 INSERT INTO Produtos VALUES (DEFAULT, 'Feijoada', 'Feijoada completa com arroz, farofa, couve e laranja.', 29.90, 'Prato Principal'),
-
 (DEFAULT, 'Picanha na Chapa', 'Picanha fatiada servida com alho, arroz, farofa e vinagrete.', 42.00, 'Prato Principal'),
 
 (DEFAULT, 'Moqueca Baiana', 'Moqueca de peixe e camarão, acompanhada de arroz branco e pirão.', 37.50, 'Prato Principal'),
@@ -122,103 +121,54 @@ INSERT INTO Produtos VALUES (DEFAULT, 'Feijoada', 'Feijoada completa com arroz, 
 (DEFAULT, 'Pudim de Leite', 'Pudim de leite condensado com calda de caramelo.', 10.00, 'Sobremesa');
 
 INSERT INTO Pedidos VALUES (DEFAULT, 1, 4, 1, 2, '2024-07-01', 'Concluído'),
-
 (DEFAULT, 3, 4, 2, 1, '2024-07-01', 'Concluído'),
-
 (DEFAULT, 6, 7, 3, 1, '2024-07-01', 'Concluído'),
-
 (DEFAULT, 8, 7, 4, 3, '2024-07-01', 'Concluído'),
-
 (DEFAULT, 10, 8, 5, 2, '2024-07-02', 'Pendente'),
-
 (DEFAULT, 15, 8, 6, 4, '2024-07-02', 'Concluído'),
-
 (DEFAULT, 22, 4, 7, 3, '2024-07-02', 'Concluído'),
-
 (DEFAULT, 18, 4, 8, 2, '2024-07-02', 'Concluído'),
-
 (DEFAULT, 4, 7, 9, 5, '2024-07-02', 'Concluído'),
-
 (DEFAULT, 6, 7, 10, 1, '2024-07-03', 'Concluído'),
-
 (DEFAULT, 9, 8, 11, 3, '2024-07-03', 'Concluído'),
-
 (DEFAULT, 11, 8, 12, 1, '2024-07-03', 'Concluído'),
-
 (DEFAULT, 24, 4, 13, 2, '2024-07-03', 'Concluído'),
-
 (DEFAULT, 27, 4, 14, 1, '2024-07-03', 'Concluído'),
-
 (DEFAULT, 17, 7, 15, 2, '2024-07-03', 'Concluído'),
-
 (DEFAULT, 7, 7, 16, 3, '2024-07-04', 'Concluído'),
-
 (DEFAULT, 13, 8, 17, 2, '2024-07-04', 'Concluído'),
-
 (DEFAULT, 25, 8, 18, 4, '2024-07-04', 'Concluído'),
-
 (DEFAULT, 22, 4, 19, 1, '2024-07-04', 'Concluído'),
-
 (DEFAULT, 2, 4, 20, 2, '2024-07-04', 'Concluído'),
-
 (DEFAULT, 8, 7, 2, 1, '2024-07-04', 'Concluído'),
-
 (DEFAULT, 11, 7, 3, 2, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 18, 8, 4, 3, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 22, 8, 5, 1, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 19, 4, 6, 4, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 28, 4, 7, 3, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 1, 7, 8, 2, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 7, 7, 9, 5, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 19, 8, 10, 1, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 15, 8, 11, 3, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 24, 4, 12, 1, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 12, 4, 13, 2, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 4, 7, 14, 1, '2024-07-05', 'Concluído'),
-
 (DEFAULT, 9, 7, 15, 2, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 18, 8, 16, 3, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 5, 8, 17, 2, '2024-07-06', 'Pendente'),
-
 (DEFAULT, 22, 4, 18, 4, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 14, 4, 19, 1, '2024-07-06', 'Pendente'),
-
 (DEFAULT, 19, 7, 20, 2, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 8, 7, 1, 2, '2024-07-06', 'Pendente'),
-
 (DEFAULT, 7, 8, 2, 1, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 4, 8, 3, 2, '2024-07-06', 'Pendente'),
-
 (DEFAULT, 21, 4, 4, 3, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 4, 4, 5, 1, '2024-07-06', 'Pendente'),
-
 (DEFAULT, 13, 7, 6, 4, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 25, 7, 7, 3, '2024-07-06', 'Pendente'),
-
 (DEFAULT, 7, 8, 8, 2, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 7, 8, 8, 2, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 12, 4, 10, 1, '2024-07-06', 'Concluído'),
-
 (DEFAULT, 10, 4, 11, 3, '2024-07-06', 'Pendente');
 
 
