@@ -25,3 +25,5 @@ DELIMITER ;
 
 
 CALL insercao_dados('Diogo', '2003-06-15', @contagem_usuarios);
+
+-- Desta forma não preciso criar linhas de código densas com mysql para inserir dados
